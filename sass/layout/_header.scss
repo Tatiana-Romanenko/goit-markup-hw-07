@@ -10,15 +10,14 @@
 .navigation-list {
   display: flex;
   align-items: center;
-}
-
-.navigation-item {
-  &:not(:last-child) {
-    margin-right: 50px;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
-.navigation-link {
+.navigation-list__link {
   letter-spacing: 0.02em;
   color: var(--main-color);
   padding-top: 32px;
@@ -54,13 +53,13 @@
   margin-left: auto;
 }
 
-.contact-list-item {
+.contact-list__item {
   &:not(:last-child) {
     margin-right: 50px;
   }
 }
 
-.contact-link {
+.contact-list__link {
   letter-spacing: 0.02em;
   color: var(--secondary-color);
   display: flex;
@@ -77,18 +76,18 @@
   }
 }
 
-.mail-icon {
+.contact-list__icon {
   display: inline-flex;
   fill: currentColor;
   margin-right: 10px;
+}
+
+.mail-icon {
   width: 16px;
   height: 12px;
 }
 
 .tel-icon {
-  display: inline-flex;
-  fill: currentColor;
-  margin-right: 10px;
   width: 10px;
   height: 16px;
 }
